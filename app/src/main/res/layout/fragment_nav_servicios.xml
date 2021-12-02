@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_servicios"
+    tools:ignore="ContentDescription">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textlatoneria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:text="@string/latoneria"
+            app:layout_constraintBottom_toTopOf="@+id/imagelatoneria"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.936"
+            android:fontFamily="@font/shalimar"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/textlavado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/lavado"
+            app:layout_constraintBottom_toTopOf="@+id/imagelavado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textmantenimiento"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.808"
+            android:fontFamily="@font/shalimar"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/textmantenimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/mantenimiento"
+            app:layout_constraintBottom_toTopOf="@+id/imagemantenimiento"
+            app:layout_constraintEnd_toStartOf="@+id/textlavado"
+            app:layout_constraintHorizontal_bias="0.279"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.808"
+            android:fontFamily="@font/shalimar"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            />
+
+        <ImageView
+            android:id="@+id/imagelavado"
+            android:layout_width="160dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="436dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imagemantenimiento"
+            app:layout_constraintTop_toBottomOf="@+id/textlavado"
+            app:srcCompat="@drawable/lavado" />
+
+        <ImageView
+            android:id="@+id/imagelatoneria"
+            android:layout_width="160dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textlatoneria"
+            app:srcCompat="@drawable/latoneria" />
+
+        <ImageView
+            android:id="@+id/imagemantenimiento"
+            android:layout_width="160dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="436dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imagelavado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textmantenimiento"
+            app:srcCompat="@drawable/mantenimiento" />
+    </androidx.constraintlayout.widget.ConstraintLayout><![CDATA[
+
+
+
+        />
+
+]]>
+</FrameLayout>
