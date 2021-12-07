@@ -1,12 +1,15 @@
 package com.usa.autoparts2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -15,6 +18,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.usa.autoparts2.databinding.ActivityMainBinding;
+import com.usa.autoparts2.view.CatalogoActivity;
+import com.usa.autoparts2.view.FavoritosActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_productos , R.id.nav_servicios , R.id.nav_sucursales)
+                 R.id.nav_servicios , R.id.nav_sucursales )
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -52,9 +57,29 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.menudeopciones, menu);
         return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.favoritos:
+                Intent intent = new Intent(MainActivity.this, FavoritosActivity.class);
+                startActivity(intent);
+                return true;
+
+            case R.id.catalogo:
+                Intent intent_2 = new Intent(MainActivity.this, CatalogoActivity.class);
+                startActivity(intent_2);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+    }
+
 
     @Override
     public boolean onSupportNavigateUp() {

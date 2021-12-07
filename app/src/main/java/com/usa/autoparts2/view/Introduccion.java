@@ -1,4 +1,4 @@
-package com.usa.autoparts2;
+package com.usa.autoparts2.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.usa.autoparts2.MainActivity;
+import com.usa.autoparts2.R;
+
+  /*
+    Codigo de referencia tomado de clase
+     */
 
 public class Introduccion extends AppCompatActivity {
     private Button btniniciar;
@@ -38,7 +45,7 @@ public class Introduccion extends AppCompatActivity {
                  * ingresar al menu Productos
                  */
 
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CatalogoActivity.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"Menu de Productos", Toast.LENGTH_LONG).show();
             }

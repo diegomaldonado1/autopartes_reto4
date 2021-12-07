@@ -1,21 +1,21 @@
-package com.usa.autoparts2;
+package com.usa.autoparts2.view;
 
-import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
+
+import com.usa.autoparts2.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link nav_productos#newInstance} factory method to
+ * Use the {@link nav_sucursales#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class nav_productos extends Fragment {
+public class nav_sucursales extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class nav_productos extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public nav_productos() {
+    public nav_sucursales() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class nav_productos extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment nav_productos.
+     * @return A new instance of fragment nav_sucursales.
      */
     // TODO: Rename and change types and number of parameters
-    public static nav_productos newInstance(String param1, String param2) {
-        nav_productos fragment = new nav_productos();
+    public static nav_sucursales newInstance(String param1, String param2) {
+        nav_sucursales fragment = new nav_sucursales();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,9 +61,6 @@ public class nav_productos extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nav_productos, container, false);
+        return inflater.inflate(R.layout.fragment_nav_sucursales, container, false);
     }
-
-
-
 }

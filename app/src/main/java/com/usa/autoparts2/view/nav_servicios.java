@@ -1,4 +1,4 @@
-package com.usa.autoparts2;
+package com.usa.autoparts2.view;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.usa.autoparts2.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link nav_sucursales#newInstance} factory method to
+ * Use the {@link nav_servicios#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class nav_sucursales extends Fragment {
+public class nav_servicios extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class nav_sucursales extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public nav_sucursales() {
+    public nav_servicios() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class nav_sucursales extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment nav_sucursales.
+     * @return A new instance of fragment nav_servicios.
      */
     // TODO: Rename and change types and number of parameters
-    public static nav_sucursales newInstance(String param1, String param2) {
-        nav_sucursales fragment = new nav_sucursales();
+    public static nav_servicios newInstance(String param1, String param2) {
+        nav_servicios fragment = new nav_servicios();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class nav_sucursales extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nav_sucursales, container, false);
+        return inflater.inflate(R.layout.fragment_nav_servicios, container, false);
     }
 }

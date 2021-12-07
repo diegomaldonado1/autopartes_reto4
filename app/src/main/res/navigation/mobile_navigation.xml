@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_productos">
+    app:startDestination="@+id/nav_servicios">
 
     <fragment
         android:id="@+id/nav_home"
@@ -24,17 +24,17 @@
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_productos"
-        android:name="com.usa.autoparts2.nav_productos"
+        android:name="com.usa.autoparts2.view.nav_productos"
         android:label="productos"
         tools:layout="@layout/fragment_nav_productos" />
     <fragment
         android:id="@+id/nav_servicios"
-        android:name="com.usa.autoparts2.nav_servicios"
+        android:name="com.usa.autoparts2.view.nav_servicios"
         android:label="servicios"
         tools:layout="@layout/fragment_nav_servicios" />
     <fragment
         android:id="@+id/nav_sucursales"
-        android:name="com.usa.autoparts2.nav_sucursales"
+        android:name="com.usa.autoparts2.view.nav_sucursales"
         android:label="sucursales"
         tools:layout="@layout/fragment_nav_sucursales" />
 
