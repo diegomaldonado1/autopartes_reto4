@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.SucursalesActivity">
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/rcvSucursales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/espacio_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:fontFamily="@font/shalimar"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/titulo_mapa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="MAPA"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:fontFamily="@font/shalimar"
+        android:textStyle="bold"
+        />
+
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapa"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+
+
+</LinearLayout>

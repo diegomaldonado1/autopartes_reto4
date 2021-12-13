@@ -88,6 +88,12 @@ public class CatalogoActivity extends AppCompatActivity {
                 Intent intent2 = new Intent(CatalogoActivity.this, MainActivity.class);
                 startActivity(intent2);
                 return true;
+
+            case R.id.sucur:
+                Intent intent3 = new Intent(CatalogoActivity.this, SucursalesActivity.class);
+                startActivity(intent3);
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
 

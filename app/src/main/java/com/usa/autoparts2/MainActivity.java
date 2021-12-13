@@ -20,7 +20,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.usa.autoparts2.databinding.ActivityMainBinding;
 import com.usa.autoparts2.view.CatalogoActivity;
 import com.usa.autoparts2.view.FavoritosActivity;
+import com.usa.autoparts2.view.SucursalesActivity;
 
+/*
+Codigo de referencia tomado de clase
+ */
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -72,6 +76,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.catalogo:
                 Intent intent_2 = new Intent(MainActivity.this, CatalogoActivity.class);
                 startActivity(intent_2);
+                return true;
+
+            case R.id.sucur:
+                Intent intent3 = new Intent(MainActivity.this, SucursalesActivity.class);
+                startActivity(intent3);
                 return true;
 
             default:

@@ -11,12 +11,6 @@
             android:id="@+id/nav_servicios"
             android:icon="@android:drawable/ic_menu_myplaces"
             android:title="@string/menu_servicio" />
-        <item
-            android:id="@+id/nav_sucursales"
-            android:icon="@android:drawable/stat_sys_phone_call_forward"
-            android:title="@string/menu_sucursales" />
-
-
 
 
     </group>

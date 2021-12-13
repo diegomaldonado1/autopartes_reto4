@@ -3,4 +3,5 @@
     <item android:id="@+id/catalogo" android:title="Mi catalogo" />
     <item android:id="@+id/favoritos" android:title="Productos favoritos" />
     <item android:id="@+id/MainActivity" android:title="Servicios" />
+    <item android:id="@+id/sucur" android:title="Sucursales" />
 </menu>
